@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', serif;
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-image: linear-gradient(to right, #ff0091, #b92191, #732980, #342361, #001439);
+  opacity: 0.8;
+}
+
+header .topbar {
+  width: 40%;
+  display: flex;
+}
+
+header .topbar .header_title {
+  width: 100%;
+  margin-left: 20px;
+}
+
+header .topbar .header_title h1 {
+  font-size: 2em;
+  margin-top: 0.35em;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px #262626;
+}
+
+header .topbar .header_title .subtitle {
+  color: #5FFBF1;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px #262626;
+}
+
+header nav {
+  width: 60%;
+  max-width: 1000px;
+  margin-right: 20px;
+}
+
+header nav ul {
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #FF0091;
+  font-weight: bold;
+  padding: 16px;
+  display: block;
+  text-shadow: 2px 2px #262626;
+  transition: 0.5s;
+}
+    
+header nav ul li a:hover {color: #5FFBF1;}
+
+.nopads {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*Estilos comunes a los elementos*/
+
+.sidetext {text-align: left;}
+.rightext {text-align: right;}
+.maintext {text-align: center;}
+.justext {text-align: justify;}
+.marino {color: #001439;}
+.fucsia {color: #FF0091;}
+.celeste {color: #5FFBF1;}
+.blanco {color: white;}
+.grisOscuro {color: #606060;}
+.aire-sup {margin-top: 100px;}
+.aire-inf {margin-bottom: 2em;}
+.medio-aire {padding-bottom: 1em;}
+.ancho60 {width: 60%;}
+
+/*Estilos de las secciones*/
+
+
+h3 {
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px lightgrey;
+  padding: 0.5em 0.5em 0em 0.5em; 
+}
+
+.caption {
+  font-size: 1em;
+  padding: 0em 0.5em 0.5em 0.5em;
+}
+
+#principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.capsula {
+  position: relative;
+  width: 17%;
+  margin-bottom: 1em;
+  float: left; 
+}
+
+.projects {
+  width: 100%;
+  box-shadow: 5px 5px 2px lightgrey;
+  border-radius: 30%;
+}
+
+.insert {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  border-radius: 30%;
+  transition: all 0.5s;
+}
+
+.insert:hover {opacity: 0.8;}
+
+.inciso {
+  width: 90%;
+  margin: 100px auto 0 auto;
+  background-color: #5FFBF1;
+  border-radius: 15px;
+  padding: 2em 2em 1em 2em;
+  box-shadow: 4px 4px 1px lightgray;
+}
+
+.grilla-chica {
+  width: 100%;
+  display: flex;
+}
+
+.miFoto {
+  width: 20%;
+  height: 100%;
+  margin-right: 2em;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 2px 2px white;
+  transition: all 0.5s;
+}
+
+.miFoto:hover {transform:scale(1.1);}
+
+#partition {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  width: 30%;
+}
+
+h4 {
+  width: 100%;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 1px lightgrey;
+  padding: 0.5em 0.5em 0em 0.5em; 
+}
+
+.item {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #FF0091;
+  box-shadow: 2px 2px 1px lightgray;
+  margin-bottom: 1em;
+  transition: all 0.5s;
+}
+
+.item:hover {filter: saturate(150%) blur(1px);}
+
+.descript {
+  margin-bottom: 0em 0.5em;
+}
+
+.proposal {
+  margin: 3em auto;
+  padding: 0.5em;
+  font-size: 1.4em;
+  background-color: #FF0091;
+  color:  white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px grey;
+  border-radius: 10px;
+}
+
+/*Estilos del botón flotante de WA */
+
+.whts-btn {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #00bb2d;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px #606060;
+  transition: all 0.5s;
+}
+
+.whts-btn:hover {
+  background-color: white;
+  color: #00bb2d;
+}
+
+/*Botón flotante de LI*/
+
+.lnkd-btn {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 110px;
+  z-index: 1000;
+  background-color: #0474b4;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px #606060;
+  transition: all 0.5s;
+}
+
+.lnkd-btn:hover {
+  background-color: white;
+  color: #0474b4;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  bottom: 0;
+  background-color: black;
+}
+
+footer #foot {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+/*-------------------------------------*/
+/*Estilos para pantallas móviles*/
+
+@media screen and (max-width: 800px) {
+  
+  body {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .topbar {
+    width: 100%;
+  }
+
+  header .topbar .header_title {
+    width: 100%;
+  }
+
+  header .topbar .header_title h1 {
+    font-size: 1.75em;
+  }
+
+  header .topbar .header_title .subtitle {
+    display:  none;
+  }
+
+    header nav {
+    background-image: linear-gradient(to right, #ff0091, #b92191, #732980, #342361, #001439);
+    width: 100%;
+  }
+
+  header nav ul {
+    justify-content: flex-start;  
+  }
+
+  header nav ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  header nav ul li a {
+    color: #5FFBF1;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+
+  .capsula {
+    width: 30%;
+  }
+
+  .miFoto {
+    display: none;
+  }
+
+  #partition {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 65%;
+    margin: auto;
+  }
+
+  .proposal {
+    margin: 1em auto;
+    font-size: 1.1em;
+  }
+
+  footer #foot {
+    text-align: left;
+  }
+}
